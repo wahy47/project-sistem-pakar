@@ -1,0 +1,58 @@
+.cons {
+    display: grid;
+    grid-template-columns: 3fr 8fr;
+}
+.tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.tab-content {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 7px;
+    border-bottom: 0px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(143, 143, 245);
+}
+.tab-content div {
+    display: none;
+}
+
+.tab-content .active {
+    display: block;
+}
+
+.pills {
+    cursor: pointer;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-bottom: 7px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(143, 143, 245);
+    transition: transform 250ms;
+}
+
+.pills:hover {
+    color: white;
+    background-color: rgb(194, 194, 255);
+    transform: translateY(-10px);
+}
+
+.tabs .active {
+    color: rgb(0, 0, 0);
+    border-color: rgb(97, 97, 177);
+    background-color: rgb(170, 170, 255);
+}
+
+.x:hover {
+    /* background-color: rgb(194, 194, 255); */
+    border-radius: 10px;
+    background: #f9dd94;
+    transform: translateY(-5px);
+    font-weight: bold;
+}
